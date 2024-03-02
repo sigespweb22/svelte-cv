@@ -5,11 +5,11 @@
 </script>
 
 <div class="font-roboto flex flex-col h-screen">
-    <div class="sticky top-0 z-50">
+    <div class="sticky top-0 z-50 ">
 		<Header />
 	</div>
 
-    <div class="grow">
+    <div class="grow bg-gradient-to-r from-cyan-500 to-blue-500">
 		<slot />
 	</div>
 

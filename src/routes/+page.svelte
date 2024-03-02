@@ -1,4 +1,1 @@
-<script lang="ts">
-</script>
-
-<h1>Início</h1>
+<h1>Inicío</h1>

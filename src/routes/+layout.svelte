@@ -4,8 +4,16 @@
 	import '../app.pcss';
 </script>
 
-<Header />
+<div class="flex flex-col h-screen">
+    <div class="sticky top-0 z-50">
+		<Header />
+	</div>
 
-<slot />
+    <div class="grow">
+		<slot />
+	</div>
 
-<Footer />
+    <div class="sticky bottom-0 z-50">
+		<Footer />
+	</div>
+</div>

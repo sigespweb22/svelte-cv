@@ -1,1 +1,5 @@
-<h1>Inicío</h1>
+<script lang="ts">
+    import Main from '$lib/Main.svelte';
+</script>
+
+<Main />

@@ -8,7 +8,7 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'roboto': ['Roboto', 'sans-serif'],
+				'sans': ['"Graphik Web"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"', "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"']
 			}
 		}
 	},

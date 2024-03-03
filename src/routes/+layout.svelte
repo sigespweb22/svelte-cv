@@ -4,7 +4,7 @@
 	import '../app.pcss';
 </script>
 
-<div class="font-roboto flex flex-col h-screen">
+<div class="flex flex-col h-screen">
     <div class="sticky top-0 z-50 ">
 		<Header />
 	</div>

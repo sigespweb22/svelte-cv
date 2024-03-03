@@ -4,8 +4,12 @@
 </script>
 
 <nav class="bg-white shadow dark:bg-gray-800">
-    <div class="container flex items-center justify-start p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        <Avatar />
-        <Navbar />
+    <div class="flex items-center justify-between lg:ml-10 md:ml-20 ml-5">
+        <div class="flex items-center">
+            <Avatar />
+        </div>
+        <div>
+            <Navbar />
+        </div>
     </div>
 </nav>

@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col h-screen">
-    <div class="sticky top-0 z-50 ">
+    <div class="sticky top-0 z-50">
 		<Header />
 	</div>
 

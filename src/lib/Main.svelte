@@ -1,4 +1,4 @@
-<div class="container px-6 py-16 mx-auto">
+<div class="mt-14 container px-6 py-16 mx-auto">
     <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
             <div class="lg:max-w-lg">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-            <img class="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Catalogue-pana.svg">
+            <img class="w-full h-full lg:max-w-3xl" src="/img/Catalogue-pana.svg" alt="Catalogue-pana.svg">
         </div>
         
     </div>

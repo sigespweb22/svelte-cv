@@ -8,7 +8,8 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'sans': ['"Graphik Web"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"', "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"']
+				'open': ['"Open Sans"', 'sans-serif']
+				// 'sans': ['"Graphik Web"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"', "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"']
 			}
 		}
 	},

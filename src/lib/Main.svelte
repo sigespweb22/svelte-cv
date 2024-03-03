@@ -1,11 +1,11 @@
-<section class="mt-2 bg-white dark:bg-gray-900">
+<section class="dark:bg-gray-900">
     <div class="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
         <div class="flex justify-center xl:w-1/2">
             <img class="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
         </div>
 
         <div class="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
-            <h2 class="text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+            <h2 class="text-2xl font-semibold tracking-tight text-white xl:text-3xl dark:text-white">
                 Download our free mobile app
             </h2>
 
@@ -57,7 +57,7 @@
     </div>
 </section>
 
-<section class="mt-2 bg-white dark:bg-gray-900">
+<!-- <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-6 mx-auto">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div>
@@ -91,4 +91,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->

@@ -1,9 +1,18 @@
-<script>
-    const items = [
-        { title: 'Título 1', category: 'Desenvolvimento 1', image: 'https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80' },
-        { title: 'Título 2', category: 'Desenvolvimento 2', image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' },
-        { title: 'Título 3', category: 'Desenvolvimento 3', image: 'https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80' }
-    ]    
+<script lang="ts">
+    export let data;
+    let currentCategory = 'Todos';
+    let resumoItems = data.items;
+
+    function changeCategory(newCategory: string) {
+        currentCategory = newCategory;
+        filterResumo()
+    }
+    
+    function filterResumo() {
+        resumoItems = data.items.filter(item => {
+            return item.category === currentCategory || currentCategory === 'Todos';
+        })
+    }
 </script>
 
 <section class="bg-white dark:bg-gray-900">
@@ -13,16 +22,19 @@
                 <h1 class="text-xl font-semibold text-gray-800 dark:text-white">Resumo</h1>
 
                 <div class="mt-4 space-y-4 lg:mt-8">
-                    <a href="#" class="block text-blue-500 dark:text-blue-400 hover:underline">Web design</a>
-                    <a href="#" class="block text-gray-500 dark:text-gray-300 hover:underline">App design</a>
-                    <a href="#" class="block text-gray-500 dark:text-gray-300 hover:underline">Branding</a>
-                    <a href="#" class="block text-gray-500 dark:text-gray-300 hover:underline">Animation</a>
-                </div>
+                    {#each data.categories as category}
+                        {#if currentCategory === category}
+                            <button class="block text-blue-500 dark:text-blue-400 hover:underline">{category}</button>
+                        {:else}
+                            <button on:click={() => {changeCategory(category)}} class="block text-gray-500 dark:text-gray-300 hover:underline">{category}</button>
+                        {/if}
+                    {/each}
+                </div>    
             </div>
 
             <div class="flex-1 mt-8 lg:mx-12 lg:mt-0">
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 ">
-                    {#each items as {title, category, image}}
+                    {#each resumoItems as {title, category, image}}
                         <div>
                             <img class="object-cover w-full rounded-lg h-96 "
                                 src="{image}"

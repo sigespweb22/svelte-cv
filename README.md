@@ -1,4 +1,9 @@
-# create-svelte
+# Meu Curriculum Vitae com tecnologias
+
+1. Svelte
+2. MerakiUI
+3. Tailwind CSS
+
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
